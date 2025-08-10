@@ -3,13 +3,11 @@
     <Operation Class="PatchOperationRemove">
         <xpath>Defs/ThingDef[defName=*]/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
     </Operation>
-    <Operation Class="PatchOperationAttributeSet">
-        <xpath>Defs/ThingDef[defName="SmallThruster"]/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
-    </Operation>
-    <Operation Class="PatchOperationAttributeSet">
-        <xpath>Defs/ThingDef[defName="LargeThruster"]/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
-    </Operation>
-    <Operation Class="PatchOperationAttributeSet">
-        <xpath>Defs/ThingDef[defName="PilotConsole"]/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PilotConsole"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Breakdownable"/>
+        </value>
+
     </Operation>
 </Patch>
